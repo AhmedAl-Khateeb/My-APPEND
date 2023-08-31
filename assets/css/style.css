@@ -1,0 +1,923 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+/* .sf7a{
+width: 100%;
+height: 100vh;
+}
+.sf7a1{
+    background-color: black;
+}
+.sf7a2{
+    background-color: darkblue;
+}
+.sf7a3{
+    background-color: brown;
+} */
+
+
+
+
+/* start navbar */
+
+.navbar-brand{
+    width: 200px;
+    font-weight: bold;
+    color: darkred;
+}
+
+.point{
+    font-weight: bold;
+    color: black;
+    margin-left: 4px;
+}
+
+
+.navbar-nav .nav-item{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 25px;
+    text-align: right;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-item .nav-link{
+    transition: 0.3s;
+}
+
+
+.active{
+    font-size: 19px;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active{
+    color: darkred;
+    background-color: wheat;
+}
+
+/* End navbar */
+
+/* Start section one */
+
+.backgroundimg{
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    min-height: 110vh;
+    position: relative;
+    top: -15px;
+}
+
+.welcome{
+    font-weight: 700;
+    margin: 0;
+    color: #ffffff;
+    position: absolute;
+    top: 320px;
+    left: 10px;
+}
+
+.text-start{
+    color: #ffffff;
+    margin: 5px 0 0 0;
+    text-align: center;
+    position: absolute;
+    top: 365px;
+    left: 10px;
+}
+.up-form{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    background: #ffffff;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+    z-index: 3;
+}
+
+.form-control{
+    border: none;
+}
+
+.up-form .form-control:active,
+.up-form .form-control:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.up-form input[type=submit]{
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+    background-color:  #e84545;
+    border-color:  #e84545;
+    padding: 8px 20px 10px 20px;
+    border-radius: 7px;
+    color: #ffffff;
+}
+
+.up-form input[type=submit]:hover {
+    background-color: rgba(232, 69, 69, 0.9);
+  }
+
+
+
+
+  /*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
+.scroll-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+  }
+  
+  .scroll-top i {
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 0;
+  }
+  
+  .scroll-top:hover {
+    background-color: wheat;
+    color: #ffffff;
+  }
+  
+  .scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+/* end section one */
+
+#btn{
+    background-color: #e84545;
+    color: #ffffff;
+    font-size: 35px;
+    width: 40px;
+    text-align: center;
+    border: none;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 9999999;
+    display: none;
+}
+/* Start Section Tow */
+#About{
+    padding: 10px 0px;
+}
+
+#About .client-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#About .client-logo img{
+    max-width: 80%;
+    padding: 40px;
+    opacity: 0.5;
+    transition: 0.3s;
+    filter: grayscale(100);
+}
+
+#About .client-logo img:hover{
+    filter: none;
+    opacity: 1;
+}
+/* End Section Tow */
+
+
+ /* Start Section Three  */
+
+ .three{
+    background-color: indianred;
+    filter:opacity(0.3);
+    color: black;
+    font-weight: bold;
+    width: 130px;
+ }
+
+ .content h2{
+    font-weight: bold;
+    color: black;
+ }
+
+.read-more i{
+    font-size: 18px;
+ margin-left: 5px;
+ line-height: 0;
+ transition: 0.3s;
+}
+
+
+
+.about .icon-box {
+    padding: 50px 40px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease-out 0s;
+    background-color: #ffffff;
+}
+
+.icon-box i{
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+    font-size: 32px;
+    line-height: 0;
+    transition: all 0.4s ease-out 0s;
+    background-color: rgba(232, 69, 69, 0.05);
+    color: #e84545;
+} 
+
+.icon-box i:hover{
+    background-color: #e84545;
+    color:#ffffff;
+}
+
+.about .icon-box h3 {
+    color: #32353a;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+.about .icon-box p {
+    margin-bottom: 0;
+  }
+ /* End Section Three  */
+
+
+ /* Start Section Four */
+
+ .ver{
+    margin-bottom: 75px;
+    margin-top: 75px;
+ }
+
+ .serv{
+    position: relative;
+    padding-top: 40px;
+    font-weight: bold;
+    color: black;
+ }
+
+.service-item::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    /* right: 0; */
+    top: 0;
+    width: 30px;
+    height: 2px;
+    border-right: 5px solid #e84545;
+    background-color: #32353a;
+}
+
+.service-item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #32353a;
+}
+
+.service-item .icon{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-right: 50px;
+  line-height: 0;
+}
+
+.service-item .icon i{
+    font-size: 50px;
+    transition: ease-in-out 0.3s;
+    z-index: 2;
+    position: relative;
+    color: #32353a;
+}
+
+
+
+.stretched-link{
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+   font-size: 25px;
+}
+.service-item .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.description{
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.service-item .title a:hover {
+    color: darkred;
+}
+ /* End Section Four */
+
+
+/* Start Section Five  */
+
+
+.image-stack{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.stack-back{
+    grid-column: 4/-1;
+    grid-row: 1;
+    width: 100%;
+    z-index: 1;
+}
+
+.stack-front{
+    grid-row: 1;
+    grid-column: 1/span 8;
+    margin-top: 20%;
+    width: 100%;
+    z-index: 2;
+}
+
+.youl li{
+   list-style: none;
+   padding: 0;
+   margin-right: 25px;
+   padding-bottom: 10px;
+   display: flex;
+   align-items: flex-start;
+}
+
+.youl li i{
+    margin-right: 10px;
+    color: #e84545;
+}
+
+.features-img-bg {
+    position: relative;
+    min-height: 400px;
+    grid-row: 1;
+    grid-column: 1/span 8;
+    margin-top: 20%;
+    width: 100%;
+    z-index: 2;
+    border: 7px solid #ffffff;
+}
+
+/* End Section Five  */
+
+
+
+/* Start Section Six */
+.Pricing{
+    margin-bottom: 120px;
+    margin-top: 100px;
+}
+
+.por{
+    position: relative;
+    padding-top: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+.col-lg-4:first-child{
+    min-height: 80vh;
+    border-radius: 50%;
+}
+.col-lg-4:nth-child(2){
+    border: 3px solid #8b000085;
+    z-index: 2;
+    border-radius: 50%;
+}
+.col-lg-4:nth-child(3){
+    border-radius: 50%;
+}
+
+.col-lg-4 .pricing{
+    text-align: center;
+    font-weight: bold;
+    color: darkred;
+    padding: 5px 5px;
+    margin-top: 25px;
+}
+
+.col-lg-4 .icon {
+    font-size: 50px;
+    background-color: #e84545;
+    width: 70px;
+    height: 70px;
+    margin: 30px auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    border-radius: 50%;
+    transform-style: preserve-3d;
+}
+
+.col-lg-4 .icon i{
+    font-size: 30px;
+    transition: ease-in-out 0.3s;
+    color: #ffffff;
+}
+
+.spann h4{
+   font-size: 30px;
+   text-align: center;
+   color: #e84545;
+   margin-bottom: 30px;
+   margin-top: 30px;
+   font-weight: 700;
+}
+
+.spann h4 sup{
+    font-size: 30px;
+}
+
+.spann h4 span{
+    color: #80808054;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.spann ul{
+    padding: 20px 0;
+    text-align: left;
+    list-style: none;
+    color: #808080fa;
+}
+
+.spann ul li{
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.spann ul li i{
+    font-size: 25px;
+    padding-right: 5px;
+}
+
+
+.text-center .btn{
+    font-weight: 700;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 40px;
+    border-radius: 4%;
+    transition: 0.3s;
+}
+ /* End Section Six  */
+
+
+
+/* Start Section Seven */
+.foo .content h3 {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.foo .content p{
+    font-size: 14px;
+}
+
+.faq-container  .faq-item{
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 25px 5px;
+    overflow: hidden;
+}
+
+.faq-toggle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.faq-toggle:hover{
+    color: #e84545;
+}
+
+.faq-item:last-child{
+     margin-bottom: 0;
+}
+
+.faq-item h3{
+    margin: 0 30px 0  0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    transition: 0.3s;
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.faq-item h3 .num{
+    color: black;
+    padding-right: 5px;
+}
+.faq-item h3:hover{
+    color: #e84545;
+}
+
+.faq-item .faq-content{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: ease-in-out 0.3s;
+    /* visibility: hidden; */
+    /* opacity: 0; */
+}
+
+.faq-item .faq-content p{
+    /* overflow: hidden; */
+    margin-bottom: 0;
+    display: none;
+}
+
+.faq-active h3{
+    color: #e84545;
+}
+
+.faq-active .faq-content{
+    display: grid;
+    grid-template-rows: 1fr;
+    visibility: visible;
+    opacity: 1;
+    padding-top: 10px;
+}
+
+.faq-active .faq-toggle{
+    transform: rotate(90dg);
+}
+/* End Section Seven */
+
+/* ************************************************* */
+/* Start Section Eight  */
+#team{
+    background-color: #f8f9fa;
+}
+
+.imgsteam{
+    border-radius: 50%;
+    border: 3px solid ;
+    border-color: rgba(0,0,0,.5);
+    box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.2);
+}
+
+#team .col-lg-4:nth-child(2){
+    border: 3px solid #f8f9fa;
+}
+
+.social{
+    text-align: center!important;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.social a {
+    transition: 0.3s;
+    color: darkblue;
+    font-size: 20px;
+    margin: 0 8px;
+}
+
+.social a:hover{
+    color: blue;
+}
+
+.employ{
+    color: gray;
+    font-size: 15px;
+}
+ /* End Section Eight */
+
+/* ***************************************************************** */
+ /* Start Section Nine */
+
+.nicephoto{
+    background-color: rgb(0 0 0);;
+    position: relative;
+    overflow: hidden;
+    min-height: 50vh;
+}
+
+.nicephoto img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 128%;
+    display: block;
+    object-fit: cover;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.mini{
+    z-index: 5;
+}
+
+.mini h3{
+    margin: 15px;
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: darkred;
+    text-align: center;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    z-index: 7;
+}
+
+.mini p{
+    color: #f8f9fa;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.click{
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+ /* End Section Nine */
+
+
+
+
+/* Start Section Recent Posts */
+article{
+    border-radius: 25px;
+}
+
+.post-img img{
+    height: auto;
+    width: 60vh;
+    border-radius: 7%;
+    margin: -4px 10px;
+    z-index: 3;
+
+}
+
+.post-category{
+    margin-left: 10px;
+    padding: 15px;
+}
+
+.anthor{
+    width: 10vh;
+    border-radius: 35px;
+    margin-left: 10px;
+}
+
+.title .anker{
+    text-decoration: none;
+    font-size: 23px;
+    color: #333;
+    margin: 0px;
+    margin: 5px 5px;
+}
+
+.title .anker:hover{
+    color: darkred;
+}
+
+.post-meta {
+    margin: 2px 16px;
+    padding: 5px 5px;
+}
+
+.post-meta .post-author{
+    color: black;
+    font-weight: 700;
+}
+
+.post-meta .post-date{
+    opacity: 0.6;
+}
+
+.recent .col-lg-4 {
+    border: none;
+}
+/* End Section Recent Posts */
+
+
+/* Start Section contact  */
+
+.container .con{
+    font-weight: 700;
+    color: black;
+}
+
+.crot{
+    background-color: #8080800a;
+    text-align: center;
+    margin: -9px 0px;
+}
+
+.crot i{
+    color: #e84545;
+    font-size: 40px;
+}
+
+
+
+.crot h2{
+    font-size: 30px;
+    color: black;
+    margin: 10px 5px;
+    padding: 5px;
+}
+
+.crot p{
+    font-weight: 400;
+    color: black;
+}
+
+form{
+    background-color: #8080800f;
+    margin-top: 15px;
+}
+
+form .name{
+    margin: inherit;
+    padding: 10px 7px;
+    padding-left: 20px;
+    margin-left: 5px;
+    width: 95%;
+}
+form .name:hover{
+    border-color: red;
+}
+
+form .subj{
+    width: 98%;
+    padding: 10px;
+    margin-left: 5px;
+}
+form .subj:hover{
+    border-color: red;
+}
+
+form .mess{
+    margin-left: 6px;
+    width: 97%;
+}
+
+
+form .submi{
+    margin-left: 250px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+@media(min-width:375px){
+
+
+    .nicephoto img{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 128%;
+        display: block;
+        object-fit: cover;
+        left: 0px;
+        opacity: 0.3;
+        z-index: 1;
+    }
+
+   
+    form .submi{
+        margin-left: 110px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+/*  End Section contact  */
+
+
+/* Start Footer */
+footer{
+    background-color: #0e0c0c0a;
+}
+
+.finish{
+    background-color: #3333331f;
+}
+
+footer .app{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+footer p{
+    font-weight: 350;
+}
+
+footer .net i{
+    font-size: 35px;
+    margin: 5px;
+    color: #33333359;
+}
+
+footer .net i:hover{
+    color: blue;
+}
+
+footer ul h4{
+    font-size: 18px;
+    color: black;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 350;
+    font-size: 12px;
+}
+footer ul li a:hover{
+    color: darkred;
+}
+
+footer ul .one{
+    font-size: 14px;
+    font-weight: 350;
+}
+
+
+footer .finish .face a{
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+    text-decoration: none;
+    font-size: 26px;
+    color: darkred;
+}
+
+footer .finish .face a:hover{
+    color: darkblue;
+}
+/* End Footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
